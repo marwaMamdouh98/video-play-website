@@ -1,0 +1,598 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient( rgb(116, 212, 212) , rgb(190, 118, 204));
+    font-family: 'Outfit', sans-serif;
+}
+/*start style of header*/
+.header{
+    width: 98%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    border-bottom: 2px solid lightgrey;
+}
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.nav_logo{
+    width: 15%;
+    padding: 15px 15px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-right: 1px solid lightgray;
+}
+.logo_icon{
+    width: 15%;
+    font-size: 20px;
+    color: green;
+}
+.logo_tittle h2 > span{
+    color: rgb(177, 177, 177);
+}
+/*start style of items of nav*/
+.nav_items{
+    width: 82%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+/*start style of first item of nav*/
+.nav_search_item{
+    width: 25%;
+    padding-left: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    color: gray;
+}
+.search_icon{
+    margin-right: 5px;
+    color: lightgray;
+    
+}
+/*start style of second item of nav*/
+.nav_second_item{
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+/*style of nav list */
+.nav_list{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+}
+.nav_list ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+.nav_list ul li{
+    padding: 0px 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+/*style of second item for bell icon*/
+.second_icon{
+    width: 7%;
+    display: flex;
+    padding: 20px 15px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    position: relative;
+}
+.second_icon >i{
+    font-size: 20px;
+}
+.inner_box{
+    width: 15px;
+    height: 15px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 20px;
+    left: 45%;
+}
+/*style of third item for button*/
+.nav_button{
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav_record{
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    background-color: lightgrey;
+    color: green;
+}
+.record_icon{
+    margin-right:  5px;
+    padding: 10px 0px;
+}
+.nav_upload{
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    background-color: green;
+    color: lightgrey;
+}
+.upload_icon{
+    margin-right:  5px;
+    padding: 10px 0px;
+    
+}
+/*end style of items of nav*/
+/*end style of header*/
+/* start style of home*/
+.home{
+    width: 98%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+}
+/*start style of menu*/
+.menu{
+    width: 15%;
+    border-right: 1px solid lightgrey;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    
+}
+.menu_content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+/*style of header of menu*/
+.menu_header{
+    width: 82%;
+    margin: auto;
+    display: flex;
+    flex-flow:  row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/*style of first item in menu header*/
+.menu_img{
+    width: 25%;
+    height: 40px;
+    border-radius: 5px;
+    background-image: url(../imgs/gallery-img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/*style of second item in menu header*/
+.menu_text{
+    width: 40%;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+.menu_text >h5{
+    padding-top: 20px;
+}
+.menu_text >p{
+    font-size: 14px;
+    color: gray;
+    
+}
+/*style of third item in menu header*/
+.menu_arrow {
+    width: 20%;
+    color: rgb(194, 193, 193);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+/* end style of menu*/
+/* start style of menu items */
+.menu_items{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin-bottom: 150px;
+}
+.menu_item{
+    width: 82%;
+    margin:15px auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.menu_icon_item{
+    width: 15%;
+    color: gray;
+}
+.menu_text_item{
+    text-transform: capitalize;
+    color: gray;
+    font-weight: 600;
+}
+.active_menu{
+    width: 100%;
+    margin: 0px ;
+    padding: 10px 15px;
+    background-color: rgb(228, 227, 227);
+    color: green;
+}
+.active_menu  > .menu_text_item p{
+    color: green;
+    font-weight: bold
+   
+}
+.active_menu .menu_icon_item i{
+    color: green;
+}
+/*style of active circles  and lines icon*/
+.active_circle .menu_icon_item{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.active_circle .menu_icon_item .menu_circle{
+    width: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.menu_circle .cir1  ,.menu_circle .cir2 , .menu_circle .cir3{
+    width: 3px;
+    height: 3px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 2px 0px;
+}
+.active_circle .menu_icon_item .menu_lines{
+    width: 20%;
+    margin-left: 2px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.menu_lines .line1 ,.menu_lines .line2 ,.menu_lines .line3{
+    width: 15px;
+    height: 1px;
+    background-color: gray;
+    margin: 3px 0px;
+}
+.menu_button{
+    width: 82%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.menu_button .menu_btn{
+    padding: 10px 0px;
+    background-color: rgb(29, 90, 29);
+    border-radius: 5px;
+    border: none;
+    color: lightgray;
+    text-transform: capitalize;
+}
+/*style of reverse item */
+.reverse_item{
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(243, 242, 242);
+}
+.reverse_item .menu_text_item{
+    width: 85%;
+}
+.reverse_item .menu_icon_item {
+    width: 10%;
+    margin: auto;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+   
+}
+.reverse_item .menu_icon_item i{
+   font-size: 10px;
+   text-align: center;
+   padding-right: 3px;
+}
+/* end style of menu items */
+/*start style of home content*/
+.home_container{
+    width: 83%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+.home_content{
+    width: 98%;
+    margin: auto;
+    margin-top: 5px;
+}
+.content2{
+    margin-bottom: 50px;
+}
+.home_header{
+    display: flex;
+    flex-flow: column wrap;
+}
+.home_tittle{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.home_text_header{
+    width: 70%;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.home_icon_header{
+    width: 15%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: right;
+}
+.left_icon{
+    width: 15%;
+    padding: 5px;
+    background-color: rgb(13, 114, 13);
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+}
+.left_icon >i ,.right_icon >i{
+    color: rgb(214, 213, 213);
+    font-size: 12px;
+}
+.right_icon{
+    width: 15%;
+    font-size: 14px;
+    padding: 5px;
+    background-color: rgb(13, 114, 13);
+    color: lightgray;
+    border-radius: 50%;
+    text-align: center;
+}
+/*start background of header*/
+.bg_header{
+    width: 100%;
+    height: 210px;
+    background-image: url(../imgs/t1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    padding: 1px;
+}
+.bg_text{
+    color: white;
+    margin: 20px;
+    font-size: 14px;
+}
+.bg_text h3{
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+.bg_text p{
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+}
+/*style of cards*/ 
+.home_cards{
+    font-family: 'Lato', sans-serif;
+}
+/*style of tittle of cards*/ 
+.cards_tittle{
+    margin-top: 25px ;
+    margin-bottom: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards_text{
+    width: 70%;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.cards_icon{
+    width: 15%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: right;
+}
+.left_icon{
+    width: 15%;
+    font-size: 14px;
+    padding: 5px;
+    background-color: rgb(13, 114, 13);
+    color: gray;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+}
+.right_icon{
+    width: 15%;
+    font-size: 14px;
+    padding: 5px;
+    background-color: rgb(13, 114, 13);
+    color: gray;
+    border-radius: 50%;
+    text-align: center;
+}
+/*style of items of cards*/
+.cards_items{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.cards_item{
+    width: 23%;
+    height: 231px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px lightgrey;
+    margin-bottom: 10px;
+    position: relative;
+    
+}
+/*style of image*/
+.cards_item .crad_img {
+   width: 100%;
+   height: 150px;
+   background-image: url(../imgs/t2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center 180%;
+   border-radius: 5px;
+}
+/*style of icon*/
+.card_icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    position: absolute;
+    top: 105px;
+    right: 10px;
+    z-index: 1;
+    box-shadow: 0px 2px 5px 0px lightgrey;
+}
+.card_icon >i{
+    font-size: 12px;
+}
+/*style of text*/
+.card_text{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
+}
+.card_text h3{
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.card_text > span{
+    color: gray;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding-bottom: 5px;
+    font-family: 'Outfit', sans-serif;
+}
+.card_text > p{
+    color: black;
+    font-weight: 600;
+    font-weight: bold;
+}
+.card_text p >span {
+    color: lightgray;
+}
+/*changeing the background for each card*/
+/*card 2*/
+.active_img2 .crad_img{
+   height: 140px;
+   background-image: url(../imgs/t3.jpg);
+   margin-bottom: 10px;
+
+}
+
+/*card 3*/
+.active_img3 .crad_img {
+    height: 140px;
+    background-image: url(../imgs/t4.jpg);
+    margin-bottom: 10px;
+
+}
+/*card 4*/
+.active_img4 .crad_img {
+    height: 140px;
+    background-image: url(../imgs/t5.jpg);
+    margin-bottom: 10px;
+
+}
+/*card 5*/
+.active_img5 .crad_img {
+    height: 140px;
+    background-image: url(../imgs/t6.jpg);
+    margin-bottom: 10px;
+
+}
+/*card 6*/
+.active_img6 .crad_img {
+    height: 143px;
+    background-image: url(../imgs/t7.jpg);
+    margin-bottom: 10px;
+
+}
+.active_img6 .card_icon {
+    position: absolute;
+    top: 110px;
+    right: 10px;
+}
+/*card 7*/
+.active_img7 .crad_img {
+    height: 151px;
+    background-image: url(../imgs/t8.jpg);
+   
+
+}
+.active_img7 .card_icon {
+    position: absolute;
+    top: 112px;
+    right: 10px;
+}
+/*card 8*/
+.active_img8 .crad_img {
+    height: 145px;
+    background-image: url(../imgs/t9.jpg);
+    margin-bottom: 10px;
+
+}
+.active_img8 .card_icon {
+    position: absolute;
+    top: 112px;
+    right: 10px;
+}
+/*end style of home content*/
+/* end style of home*/
